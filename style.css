@@ -1,0 +1,10 @@
+#scene {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.scene_one {
+    background-color: black;
+}
