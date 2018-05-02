@@ -22,6 +22,7 @@ function sendBesked() {
     $("#send_message")[0].play();
     $("#send_message")[0].volume = 0.1;
 }
+
 //SCENE 1
 
 
@@ -37,7 +38,7 @@ function sidenVises() {
 
 
     //scene 2
-
+    $("#the_day_after").hide();
     $("#send_picture_sprite_one").hide();
     $("#send_picture_sprite_two").hide();
     $("#send_picture_sprite_three").hide();
@@ -73,9 +74,7 @@ function sidenVises() {
 
 
 
-    $("#titelbillede").addClass("show");
 
-    /* $("#titelbillede").on("click", tagBillede);*/
     setTimeout(tagBillede, 5000);
 }
 
@@ -86,9 +85,7 @@ function tagBillede() {
 
 
     $("#bully_scene1_container").show();
-    $("#titelbillede").off("click", tagBillede);
-    $("#titelbillede").removeClass("show");
-    $("#titelbillede").hide();
+
     $("#background").addClass("background_one");
     $("#bully_scene1_sprite").addClass("bully_group_snap");
 
@@ -97,19 +94,29 @@ function tagBillede() {
     setTimeout(kameraLyd, 3500);
 
 
-    setTimeout(modtagBilledeEt, 6000);
+    setTimeout(dagenEfter, 6000);
 
 }
 
 // SCENE 2
 
-function modtagBilledeEt() {
-    console.log("modtagBilledeEt");
+function dagenEfter() {
+    console.log("dagenEfter");
+
     $("#muffled")[0].volume = 0;
     $("#background").removeClass("background_one");
     $("#bully_scene1_sprite").removeClass("bully_group_snap");
     $("#bully_scene1_sprite").hide();
 
+    $("#the_day_after").show();
+
+    setTimeout(modtagBilledeEt, 3000);
+}
+
+function modtagBilledeEt() {
+    console.log("modtagBilledeEt");
+
+    $("#the_day_after").hide();
 
 
     $("#send_picture_sprite_one").show();
@@ -266,6 +273,10 @@ function userValg() {
     $("#choice_two_button").on("click", valgTo);
     $("#choice_three_button").on("click", valgTre);
 
+    $("#choice_one_button").addClass("button_hover");
+    $("#choice_two_button").addClass("button_hover");
+    $("#choice_three_button").addClass("button_hover");
+
 }
 
 function valgEt() {
@@ -310,7 +321,7 @@ function valgEtAlert() {
 
     $("#answer_one").show();
 
-    setTimeout(slutning, 20000);
+    setTimeout(slutning, 15000);
 
 
 }
@@ -358,7 +369,7 @@ function valgToAlert() {
 
     $("#answer_two").show();
 
-    setTimeout(slutning, 20000);
+    setTimeout(slutning, 15000);
 }
 
 function valgTre() {
@@ -403,7 +414,7 @@ function valgTreAlert() {
 
     $("#answer_three").show();
 
-    setTimeout(slutning, 20000);
+    setTimeout(slutning, 15000);
 }
 
 function slutning() {

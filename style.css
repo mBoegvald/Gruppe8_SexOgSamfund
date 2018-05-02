@@ -83,6 +83,14 @@ body {
 
 /*SCENE 2 START*/
 
+#the_day_after {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(dagenefter.png);
+    background-size: 100%;
+}
+
 .background_two {
     background-color: #BBE1EE;
     position: relative;
@@ -592,6 +600,11 @@ body {
     height: 11.98vw;
     left: 10vw;
     bottom: 8vw;
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px #f18c09;
+    transition: transform 0.5s ease-out;
 
 }
 
@@ -603,6 +616,11 @@ body {
     height: 11.98vw;
     left: 39vw;
     bottom: 8vw;
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px #f18c09;
+    transition: transform 0.5s ease-out;
 
 }
 
@@ -614,7 +632,11 @@ body {
     height: 11.98vw;
     left: 68vw;
     bottom: 8vw;
-
+    cursor: pointer;
+    border-radius: 7px;
+    outline: none;
+    box-shadow: 0 0 10px #f18c09;
+    transition: transform 0.5s ease-out;
 }
 
 
@@ -667,6 +689,10 @@ body {
     bottom: 8vw;
 }
 
-#logo :hover {}
+.button_hover:hover {
+    transform: scale(1.1);
+
+
+}
 
 /*SCENE 3 SLUT*/
