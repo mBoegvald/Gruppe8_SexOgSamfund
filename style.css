@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
 #scene {
     width: 100vw;
     height: 56.25vw;
@@ -5,6 +12,661 @@
     overflow: hidden;
 }
 
-.scene_one {
-    background-color: black;
+#background {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
 }
+
+#foreground {
+
+    position: absolute;
+    background-image: url(forgrund.svg);
+    background-size: 100%;
+    width: 100vw;
+    height: 70vw;
+    bottom: -15vw;
+}
+
+/*SCENE 1 START*/
+
+#friday {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(fredagaften.png);
+    background-size: 100%;
+}
+
+.background_one {
+    background-image: url(background_scene1.png);
+    background-size: 100%;
+
+}
+
+#bully_scene1_container {
+    position: absolute;
+    bottom: 0;
+    left: 6vw;
+
+}
+
+
+#bully_scene1_sprite {
+    background-image: url(spritesheet_scene1_transparent_v2.png);
+    background-size: 1300% 100%;
+    width: 85.94vw;
+    height: 33.85vw;
+
+}
+
+.bully_group_snap {
+    animation-name: bully_group_snap_kf;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(13);
+    animation-fill-mode: both;
+}
+
+@keyframes bully_group_snap_kf {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -1300% 0;
+    }
+}
+
+
+/*SCENE 1 SLUT*/
+
+/*SCENE 2 START*/
+
+.background_two {
+    background-color: #BBE1EE;
+    position: relative;
+}
+
+
+#send_picture_sprite_one {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+
+
+}
+
+.send_picture_sprite_one {
+    animation-name: send_picture_sprite_one_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+}
+
+
+@keyframes send_picture_sprite_one_kf {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -200% 0%;
+    }
+}
+
+#send_picture_sprite_two {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 25vw;
+}
+
+.send_picture_sprite_two {
+    animation-name: send_picture_sprite_two_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+
+}
+
+
+@keyframes send_picture_sprite_two_kf {
+    0% {
+        background-position: 0% -100%;
+    }
+
+    100% {
+        background-position: -200% -100%;
+    }
+}
+
+#send_picture_sprite_three {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 50vw;
+}
+
+.send_picture_sprite_three {
+    animation-name: send_picture_sprite_three_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+
+}
+
+
+@keyframes send_picture_sprite_three_kf {
+    0% {
+        background-position: 0% -200%;
+    }
+
+    100% {
+        background-position: -200% -200%;
+    }
+}
+
+#send_picture_sprite_four {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 75vw;
+}
+
+.send_picture_sprite_four {
+    animation-name: send_picture_sprite_four_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+}
+
+
+@keyframes send_picture_sprite_four_kf {
+    0% {
+        background-position: 0% -300%;
+    }
+
+    100% {
+        background-position: -200% -300%;
+    }
+}
+
+#send_picture_sprite_five {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 0vw;
+    bottom: 0vw;
+}
+
+.send_picture_sprite_five {
+    animation-name: send_picture_sprite_five_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+}
+
+
+@keyframes send_picture_sprite_five_kf {
+    0% {
+        background-position: 0% -400%;
+    }
+
+    100% {
+        background-position: -200% -400%;
+    }
+}
+
+#send_picture_sprite_six {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 25vw;
+    bottom: 0vw;
+}
+
+.send_picture_sprite_six {
+    animation-name: send_picture_sprite_six_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+}
+
+
+@keyframes send_picture_sprite_six_kf {
+    0% {
+        background-position: 0% -500%;
+    }
+
+    100% {
+        background-position: -200% -500%;
+    }
+}
+
+#send_picture_sprite_seven {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 50vw;
+    bottom: 0vw;
+}
+
+.send_picture_sprite_seven {
+    animation-name: send_picture_sprite_seven_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+
+}
+
+
+@keyframes send_picture_sprite_seven_kf {
+    0% {
+        background-position: 0% -600%;
+    }
+
+    100% {
+        background-position: -200% -600%;
+    }
+}
+
+#send_picture_sprite_eight {
+
+    position: absolute;
+    background-image: url(spritesheet_scene2-01.png);
+    background-size: 300% 800%;
+    width: 25vw;
+    height: 28.13vw;
+    left: 75vw;
+    bottom: 0vw;
+}
+
+.send_picture_sprite_eight {
+    animation-name: send_picture_sprite_eight_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(2);
+    animation-fill-mode: both;
+}
+
+
+@keyframes send_picture_sprite_eight_kf {
+    0% {
+        background-position: 0% -700%;
+    }
+
+    100% {
+        background-position: -200% -700%;
+    }
+}
+
+
+/*SCENE 2 SLUT*/
+
+/*SCENE 3 START*/
+
+.background_three {
+    background-image: url(background-scene3_2-01.png);
+    background-size: 100%;
+}
+
+#user_container {
+    position: absolute;
+    left: -15vw;
+    bottom: -25vw;
+
+
+}
+
+.user_walk_in {
+    animation-name: user_walk_in_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes user_walk_in_kf {
+    0% {
+        left: -15vw;
+        bottom: -25vw;
+        transform: scale(3);
+    }
+    100% {
+        left: 20vw;
+        bottom: -5vw;
+        transform: scale(2.7);
+    }
+
+}
+
+.user_position_in {
+    animation-name: user_position_in_kf;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes user_position_in_kf {
+    0% {
+        left: 20vw;
+        bottom: -5vw;
+        transform: scale(2.7);
+    }
+    100% {
+        left: 20vw;
+        bottom: -5vw;
+        transform: scale(2.7);
+    }
+
+}
+
+.user_moveto_victim {
+    animation-name: user_moveto_victim_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes user_moveto_victim_kf {
+    0% {
+        left: 20vw;
+        bottom: -5vw;
+        transform: scale(2.7);
+    }
+    100% {
+        left: 6vw;
+        bottom: 19vw;
+        transform: scale(1.3);
+    }
+}
+
+.user_moveto_bully {
+    animation-name: user_moveto_bully_kf;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes user_moveto_bully_kf {
+    0% {
+        left: 20vw;
+        bottom: -5vw;
+        transform: scale(2.7);
+    }
+    100% {
+        left: 55vw;
+        bottom: 18vw;
+        transform: scale(1.3);
+    }
+}
+
+
+#user_sprite {
+    background-image: url(brugerwalkcycle.svg);
+    background-size: 800% 300%;
+    width: 18.22vw;
+    height: 18.22vw;
+
+
+}
+
+.user_walkcycle {
+    animation-name: user_walkcycle_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 2;
+    animation-timing-function: steps(8);
+    animation-fill-mode: both;
+}
+
+
+
+@keyframes user_walkcycle_kf {
+    0% {
+        background-position: 0 0;
+
+    }
+
+    100% {
+        background-position: -800% 0;
+    }
+}
+
+/*@keyframes user_walkcycle_right_kf {
+    0% {}
+    100% {
+        transform: perspective(70vw) rotateY(-30deg);
+    }
+}*/
+
+.user_recieve_picture {
+    animation-name: user_recieve_picture_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(1);
+    animation-fill-mode: both;
+}
+
+@keyframes user_recieve_picture_kf {
+    0% {
+        background-position: 0 -200%;
+
+    }
+
+    100% {
+        background-position: -100% -200%;
+    }
+}
+
+.user_stand {
+    animation-name: user_stand_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(0);
+    animation-fill-mode: both;
+}
+
+@keyframes user_stand_kf {
+    0% {
+        background-position: 0 -200%;
+
+    }
+    100% {
+        background-position: 0 -200%;
+    }
+
+
+}
+
+
+#victim_container {
+    position: absolute;
+    bottom: 22vw;
+
+}
+
+#victim_sprite {
+    background-image: url(spritesheet_scene3_offer_transparent.png);
+    background-size: 1800% 100%;
+    width: 18.22vw;
+    height: 18.22vw;
+
+}
+
+.victim_cycle {
+    animation-name: victim_cycle_kf;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(18);
+    animation-fill-mode: both;
+}
+
+@keyframes victim_cycle_kf {
+    0% {
+        background-position: 0;
+    }
+    100% {
+        background-position: 1800% 0;
+    }
+}
+
+#bully_scene3_container {
+    position: absolute;
+    left: 65vw;
+    bottom: 23vw;
+}
+
+#bully_scene3_sprite {
+    background-image: url(bullygroup.svg);
+    background-size: 300% 100%;
+    width: 26.04vw;
+    height: 15.62vw;
+    transform: scale(2);
+}
+
+.bully_cycle {
+    animation-name: bully_cycle_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+    animation-fill-mode: both;
+}
+
+@keyframes bully_cycle_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -300% 0%;
+    }
+}
+
+
+#question {
+    position: absolute;
+    background-image: url(spoergsmaal-01.png);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+}
+
+#choice_one_button {
+    position: absolute;
+    background-image: url(knap1.png);
+    background-size: 100%;
+    width: 21.61vw;
+    height: 11.98vw;
+    left: 10vw;
+    bottom: 8vw;
+
+}
+
+#choice_two_button {
+    position: absolute;
+    background-image: url(knap2.png);
+    background-size: 100%;
+    width: 21.61vw;
+    height: 11.98vw;
+    left: 39vw;
+    bottom: 8vw;
+
+}
+
+#choice_three_button {
+    position: absolute;
+    background-image: url(knap3.png);
+    background-size: 100%;
+    width: 21.61vw;
+    height: 11.98vw;
+    left: 68vw;
+    bottom: 8vw;
+
+}
+
+
+#blue_layer {
+    position: absolute;
+    background-image: url(blue_layer.png);
+    background-size: 100%;
+    width: 100vw;
+    height: 56.25vw;
+
+}
+
+#answer_one {
+    position: absolute;
+    background-image: url(svar1.png);
+    background-size: 100%;
+    width: 54.95vw;
+    height: 39.69vw;
+    left: 22vw;
+    bottom: 8vw;
+}
+
+#answer_two {
+    position: absolute;
+    background-image: url(svar2.png);
+    background-size: 100%;
+    width: 54.95vw;
+    height: 39.69vw;
+    left: 22vw;
+    bottom: 8vw;
+}
+
+#answer_three {
+    position: absolute;
+    background-image: url(svar3.png);
+    background-size: 100%;
+    width: 54.95vw;
+    height: 39.69vw;
+    left: 22vw;
+    bottom: 8vw;
+}
+
+#logo {
+    position: absolute;
+    background-image: url(logo.png);
+    background-size: 100%;
+    width: 54.95vw;
+    height: 39.69vw;
+    left: 22vw;
+    bottom: 8vw;
+}
+
+#logo :hover {}
+
+/*SCENE 3 SLUT*/
