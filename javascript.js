@@ -25,15 +25,21 @@ function sendBesked() {
 
 //SCENE 1
 
-
 function sidenVises() {
     console.log("sidenVises");
 
+
     //scene 1
 
+    $("#friday").hide();
     $("#bully_scene1_container").hide();
+    $("#user_container").removeClass("user_walk_in");
+    $("#user_sprite").removeClass("user_stand");
+    $("#background").removeClass("background_three");
+    $("#user_container").removeClass("user_moveto_victim");
+    $("#user_container").removeClass("user_moveto_bully");
 
-    $("#muffled")[0].play();
+    $("#replay").off("click");
 
 
 
@@ -52,6 +58,8 @@ function sidenVises() {
 
     $("#bully_scene3_container").hide();
 
+    $("#user_container").hide();
+
     $("#victim_container").hide();
 
     $("#foreground").hide();
@@ -69,6 +77,36 @@ function sidenVises() {
     $("#answer_three").hide();
 
     $("#logo").hide();
+    $("#replay").hide();
+
+
+
+    $("#title_picture").show();
+    $("#title_start").show();
+    $("#title_start").on("click", historieStart);
+    $("#title_picture").addClass("blur_effect");
+    $("#title_start").addClass("annonce_border");
+
+
+
+}
+
+
+function historieStart() {
+    console.log("historieStart");
+
+    $("#title_picture").hide();
+    $("#title_start").hide();
+
+
+    $("#title_start").off("click");
+
+
+    $("#friday").show();
+
+
+    $("#muffled")[0].play();
+
 
 
 
@@ -82,7 +120,6 @@ function tagBillede() {
     console.log("tagBillede");
 
     $("#friday").hide();
-
 
     $("#bully_scene1_container").show();
 
@@ -103,10 +140,9 @@ function tagBillede() {
 function dagenEfter() {
     console.log("dagenEfter");
 
-    $("#muffled")[0].volume = 0;
     $("#background").removeClass("background_one");
     $("#bully_scene1_sprite").removeClass("bully_group_snap");
-    $("#bully_scene1_sprite").hide();
+    $("#bully_scene1_container").hide();
 
     $("#the_day_after").show();
 
@@ -201,9 +237,13 @@ function modtagBilledeOtte() {
 
 function gruppeGriner() {
     console.log("gruppeGriner");
+
     $("#background").removeClass("background_two");
     $("#background").addClass("background_three");
+
+
     $("#foreground").show();
+    $("#user_container").show();
     $("#victim_container").show();
     $("#bully_scene3_container").show();
 
@@ -285,9 +325,9 @@ function valgEt() {
     $("#user_container").removeClass("user_position_in");
     $("#user_sprite").removeClass("user_recieve_picture");
 
-    $("#choice_one_button").off("click", valgEt);
-    $("#choice_two_button").off("click", valgTo);
-    $("#choice_three_button").off("click", valgTre);
+    $("#choice_one_button").off("click");
+    $("#choice_two_button").off("click");
+    $("#choice_three_button").off("click");
 
     $("#question").hide();
     $("#choice_one_button").hide();
@@ -332,9 +372,9 @@ function valgTo() {
     $("#user_container").removeClass("user_position_in");
     $("#user_sprite").removeClass("user_recieve_picture");
 
-    $("#choice_one_button").off("click", valgEt);
-    $("#choice_two_button").off("click", valgTo);
-    $("#choice_three_button").off("click", valgTre);
+    $("#choice_one_button").off("click");
+    $("#choice_two_button").off("click");
+    $("#choice_three_button").off("click");
 
     $("#question").hide();
     $("#choice_one_button").hide();
@@ -378,9 +418,9 @@ function valgTre() {
     $("#user_container").removeClass("user_position_in");
     $("#user_sprite").removeClass("user_recieve_picture");
 
-    $("#choice_one_button").off("click", valgEt);
-    $("#choice_two_button").off("click", valgTo);
-    $("#choice_three_button").off("click", valgTre);
+    $("#choice_one_button").off("click");
+    $("#choice_two_button").off("click");
+    $("#choice_three_button").off("click");
 
     $("#question").hide();
     $("#choice_one_button").hide();
@@ -419,7 +459,9 @@ function valgTreAlert() {
 
 function slutning() {
     console.log("slutning");
+
     $("#logo").show();
+
 
     $("#answer_one").fadeOut(1500, "linear");
     $("#answer_two").fadeOut(1500, "linear");
@@ -435,6 +477,16 @@ function slutning() {
         $("#logo").css("transform", "scale(1)");
     });
 
+    setTimeout(afspilIgen, 3000);
 
+}
+
+function afspilIgen() {
+    console.log("afspilIgen");
+
+    $("#replay").show();
+
+    $("#replay").addClass("replay_button");
+    $("#replay").on("click", sidenVises);
 
 }

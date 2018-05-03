@@ -78,6 +78,35 @@ body {
     }
 }
 
+#title_picture {
+    width: 100vw;
+    height: 54.06vw;
+    position: absolute;
+    background-image: url(facebook_baggrund_final.PNG);
+    background-size: 100%;
+}
+
+.blur_effect {
+    filter: blur(1px);
+}
+
+#title_start {
+    width: 26.04vw;
+    height: 28.3vw;
+    position: absolute;
+    background-image: url(facebookannonce.png);
+    background-size: 100%;
+    left: 33.3vw;
+    bottom: 2.3vw;
+}
+
+.annonce_border {
+    cursor: pointer;
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 0 10px #000000;
+}
+
 
 /*SCENE 1 SLUT*/
 
@@ -504,7 +533,6 @@ body {
 .user_stand {
     animation-name: user_stand_kf;
     animation-duration: 1s;
-    animation-timing-function: steps(0);
     animation-fill-mode: both;
 }
 
@@ -690,9 +718,40 @@ body {
 }
 
 .button_hover:hover {
+
     transform: scale(1.1);
+}
 
+#replay {
+    position: absolute;
+    background-image: url(replay.png);
+    background-size: 100%;
+    width: 12vw;
+    height: 12vw;
+    left: 3vw;
+    bottom: 2vw;
+    cursor: pointer;
+}
 
+.replay_button {
+    animation-name: replay_button_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+}
+
+@keyframes replay_button_kf {
+    0% {
+        opacity: .9;
+
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: .9;
+    }
 }
 
 /*SCENE 3 SLUT*/
